@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="float-grid.css">
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+        <script src="https://js-cdn.music.apple.com/musickit/v1/musickit.js"></script>
+
+        
+        
+        <title>MYUZIK - Find top songs and concert info</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="text-box">
+                <h1 class="heading-main">Myuzik</h1>
+                <h2 class="heading-sub">Top Songs and Concert Info</h2>
+            </div>
+            <fieldset>
+                <form action=# id="searchForm">
+                    <input id="search-musixmatch"class="query" type="text" placeholder="Find Songs by Artist" required>
+                    <input class="submit-button" type="submit">
+                    
+                </form>
+            
+            </fieldset>
+        </header>
+        <div class="container hidden">
+          <main class="content-boxes">
+            <div class="row">
+              <div class="col-6">
+                <div class="box songs-box">
+                  <span class="songs-heading">Top Songs</span><hr>
+                  <ol class="song-list">  
+                    <div id="songsList" class="songs-content"></div>
+                  </ol>  
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="box concerts-box">
+                  <span class="concerts-heading">Upcoming Concerts</span><hr>
+                  <h4 class="buy-tickets">Click link to buy tickets</h4>
+                  <ul class="concerts-content" id="concertsList">
+                  
+                  </ul>
+                </div> 
+              </div>
+            </div>
+          </main>
+        </div>
+        <footer> Developed by Ricardo Zavala. Song titles brought to you by <strong>Musixmatch</strong><br>
+        Concert info brought to you by <strong>SeatGeek</strong>. Have questions? <a href="mailto:rzavala192008@yahoo.com">Email me!</a>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>
