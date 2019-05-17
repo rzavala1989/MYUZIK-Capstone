@@ -11,7 +11,7 @@ You can find a live demo for this app <a href="https://api-capstone-revision--jo
 MYUZIK is optimized for both desktop and mobile, is fully useable with keyboard controls, and has been made with disabilities such as visual impairment and color blindness in mind.
 
 <h3>Screenshots</h3>
-The landing page of MYUZIK, the results page with an entry of "Boyz II Men" <br />
+The landing page of MYUZIK, the results page with an entry of "Boyz II Men" <br /><br />
 <img src="https://i.ibb.co/wSXvCzx/Screenshot-MYUZIK-2.png" alt="Screenshot-MYUZIK-2" border="0"><br />
 
 <img src="https://i.ibb.co/tYy86xF/Screenshot-MYUZIK-3.png" alt="Screenshot-MYUZIK-3" border="0"><br />
