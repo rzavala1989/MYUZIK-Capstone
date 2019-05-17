@@ -6,12 +6,12 @@ track the artist's upcoming tour dates.
 
 <h3>See it in Action</h3>
 
-You can find a live demo for this app <a href="https://goodnaturednoisyapplication--johnmexico.repl.co/">here</a>. If you can't get your artist to show up, there must either be a typo in the input query, or that artist doesn't have any upcoming live performances
+You can find a live demo for this app <a href="https://api-capstone-revision--johnmexico.repl.co/">here</a>. If you can't get your artist to show up, there must either be a typo in the input query, or that artist doesn't have any upcoming live performances
 
 MYUZIK is optimized for both desktop and mobile, is fully useable with keyboard controls, and has been made with disabilities such as visual impairment and color blindness in mind.
 
 <h3>Screenshots</h3>
-The landing page of MYUZIK, the results page with an entry of "Justin Timberlake"
+The landing page of MYUZIK, the results page with an entry of "Boyz II Men"
 <a href="https://ibb.co/hs55x0"><img src="https://preview.ibb.co/bT1dH0/APICapstone1.png" alt="APICapstone1" border="0"></a><br />
 
 
