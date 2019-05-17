@@ -23,7 +23,7 @@ Despite being a one-page web application, this app is designed to work only with
 Please be aware that this app pulls data only from Musixmatch and SeatGeek. If an event isn't present on SeatGeek, perhaps because it is a concert free of change, it will not appear in the app, as it only displays event which have tickets for sale.
 
 <h3>For Developers</h3>
-Developed using plain HTML, CSS and JavaScript. This app uses one or more APIs from the following services: <br>
+Developed using plain HTML, CSS, jQuery and JavaScript. This app uses one or more APIs from the following services: <br>
 <ul>
 <li>Musixmatch: for track lookup and metadata.</li>
 <li>SeatGeek: for info on upcoming live performances.</li>
