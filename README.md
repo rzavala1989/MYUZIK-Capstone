@@ -1,8 +1,8 @@
 <h2>MYUZIK</h2>
 
 MYUZIK is an application that searches for an artist's most popular songs, and when they are to perform their concerts. 
-The app cites information from Musixmatch, which retrieves the artist's hottest song at the moment, as well as information from SeatGeek, which 
-track the artist's upcoming tour dates.
+The app cites information from Musixmatch, which retrieves the artist's hottest songs at the moment, as well as information from SeatGeek, which 
+track the artist's upcoming tour dates. The second feature of this app allows for users to buy concert tickets via the SeatGeek website.
 
 <h3>See it in Action</h3>
 
@@ -12,10 +12,9 @@ MYUZIK is optimized for both desktop and mobile, is fully useable with keyboard 
 
 <h3>Screenshots</h3>
 The landing page of MYUZIK, the results page with an entry of "Boyz II Men"
-<a href="https://ibb.co/hs55x0"><img src="https://preview.ibb.co/bT1dH0/APICapstone1.png" alt="APICapstone1" border="0"></a><br />
+<img src="https://i.ibb.co/wSXvCzx/Screenshot-MYUZIK-2.png" alt="Screenshot-MYUZIK-2" border="0"><br />
 
-
-<a href="https://ibb.co/kKsUPf"><img src="https://preview.ibb.co/gCyfVL/APICapstone2.png" alt="APICapstone2" border="0"></a><br />
+<img src="https://i.ibb.co/tYy86xF/Screenshot-MYUZIK-3.png" alt="Screenshot-MYUZIK-3" border="0"><br />
 
 <h3>Usage Notes</h3>
 
