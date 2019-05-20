@@ -18,44 +18,51 @@
         <title>MYUZIK - Find top songs and concert info</title>
     </head>
     <body>
-        <header class="header">
-            <div class="text-box">
-                <h1 class="heading-main">Myuzik</h1>
-                <h2 class="heading-sub">Find Songs and Concerts</h2>
-            </div>
-            <fieldset>
-                <form action=# id="searchForm">
-                    <input id="search-musixmatch"class="query" type="text" placeholder="Find Songs by Artist" required>
-                    <input class="submit-button" type="submit">
-                    
-                </form>
-            
-            </fieldset>
-        </header>
-        <div class="container hidden">
-          <main class="content-boxes">
-            <div class="row">
-              <div class="col-6">
-                <div class="box songs-box">
-                  <span class="songs-heading">Top Songs</span><hr>
-                  <ol class="song-list">  
-                    <div id="songsList" class="songs-content"></div>
-                  </ol>  
+        <section id="artist-search-section">
+          <header class="header" role="heading">
+              <div class="text-box" aria-live="assertive">
+                  <h1 class="heading-main">Myuzik</h1>
+                  <h2 class="heading-sub">Songs and Concert Info</h2>
+              </div>
+              <section id="artist-search-section">
+              <fieldset>
+                  <form action=# id="searchForm" role="form">
+                      <legend class="instructions-for-user">
+                        <label>Find Info by Artist</label>
+                      </legend>
+                      <input id="search-musixmatch"class="query" type="text" placeholder="Search for artist name" required>
+                      <input class="submit-button" type="submit">
+                      
+                  </form>
+              
+              </fieldset>
+          </header>
+        <section>
+        <section id="search-result-section">
+          <div class="container hidden">
+            <main class="content-boxes">
+              <div class="row">
+                <div class="col-6">
+                  <div class="box songs-box">
+                    <legend class="songs-heading" aria-live="assertive">Top Songs</legend><hr>
+                    <ol class="song-list">  
+                      <div id="songsList" class="songs-content" aria-live="polite" role="group">
+                    </ol>  
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="box concerts-box">
+                    <legend class="concerts-heading" aria-live="assertive">Upcoming Concerts</legend><hr>
+                    <h4 class="buy-tickets" aria-live="assertive">Click link to buy tickets</h4>
+                    <ul class="concerts-content" id="concertsList"aria-live="polite" role="group">
+                    </ul>
+                  </div> 
                 </div>
               </div>
-              <div class="col-6">
-                <div class="box concerts-box">
-                  <span class="concerts-heading">Upcoming Concerts</span><hr>
-                  <h4 class="buy-tickets">Click link to buy tickets</h4>
-                  <ul class="concerts-content" id="concertsList">
-                  
-                  </ul>
-                </div> 
-              </div>
-            </div>
-          </main>
-        </div>
-        <footer> Developed by Ricardo Zavala. Song titles brought to you by <strong>Musixmatch</strong><br>
+            </main>
+          </div>
+        </section> 
+        <footer aria-live="polite" role="contentinfo"> Developed by Ricardo Zavala. Song titles brought to you by <strong>Musixmatch</strong><br>
         Concert info brought to you by <strong>SeatGeek</strong>. Have questions? <a href="mailto:rzavala192008@yahoo.com">Email me!</a>
         </footer>
     </body>
