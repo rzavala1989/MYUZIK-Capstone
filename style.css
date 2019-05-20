@@ -137,6 +137,13 @@ form{
   display:inline-block;
 }
 
+label {
+  color:rgb(255, 255, 255);
+  font-weight: 700;
+  display:block;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
 input.query{
     border:none;
     margin:20px 0;
@@ -276,6 +283,12 @@ a:visited {
     width: 50%;
     margin: auto;
   }
+
+  label {
+    margin-top:10%;
+    font-size: 20px;
+    text-align: center;
+  }
   input.query{
     margin:20px 30px;
   }
@@ -288,7 +301,15 @@ a:visited {
   input.query {
     width: 100%;
   }
+
+  label {
+    position:relative;
+    left: 13%;
+  }
+
   input.submit-button {
+    position: relative;
     width: 100%;
+    left:14%;
   }
 }
