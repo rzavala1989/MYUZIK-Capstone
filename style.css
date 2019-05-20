@@ -299,17 +299,19 @@ a:visited {
 
 @media screen and (max-width: 550px) {
   input.query {
+    position: relative;
+    right:13%;
     width: 100%;
   }
 
   label {
     position:relative;
-    left: 13%;
+    left: 3%;
   }
 
   input.submit-button {
     position: relative;
     width: 100%;
-    left:14%;
+    left:3%;
   }
 }
