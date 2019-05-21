@@ -9,10 +9,10 @@ const ClientSecret="d263792d50e5ee4cd24505500b6c159d5a69d9596e055fa9a416b85e482c
 
 function getDataFromApiSongs(endpoint, artistName, callback) {
   $.ajax({
-		type: 'GET',
-		url: MusicAPI + endpoint,
-		data: Object.assign({
-			apikey: APIKey,
+	type: 'GET',
+	url: MusicAPI + endpoint,
+	data: Object.assign({
+		apikey: APIKey,
 			format: 'jsonp',
 			callback: 'jsonpCallback'
 		}),
@@ -35,11 +35,13 @@ function getDataFromApiConcerts(endpoint, artistName, callback) {
       url: SeatGeekAPI + endpoint}).done(callback);
 }
 
-$("#searchForm").submit(function(event) {
+function watchForm(){
+  $("#searchForm").submit(function(event) {
   event.preventDefault();
   let newChar = "-";
   $(".container").removeClass("hidden");
   
+
   var artistName = $(".query").val();
   
   getDataFromApiSongs(`track.search?q_artist=${artistName}&page_size=10&page=1&s_track_rating=desc`, artistName, (response) =>{
@@ -60,14 +62,11 @@ $("#searchForm").submit(function(event) {
         songsList.innerHTML = songDOM;
       
         
-    getDataFromApiConcerts(`events?performers.slug=${artistName.split(' ').join(newChar)}`, artistName,(eventsResponse)=>{
-
+   getDataFromApiConcerts(`events?performers.slug=${artistName.split(' ').join(newChar)}`, artistName,(eventsResponse)=>{
           let concertDOM = '';
           const {events} = eventsResponse;
           events.map((event) =>{
-
               const {title, datetime_local, venue:{extended_address, name}} = event;
-
               let newDateTime = new Date(datetime_local);
 
               concertDOM += `<li class="concertsAnimation" tabindex=0><strong><a href="http://seatgeek.com/${artistName.split(' ').join(newChar)}-tickets">${title}</a></strong> at the ${name}, <em>${extended_address}</em>, on ${newDateTime.toLocaleString()}</li><br>`;
@@ -81,4 +80,7 @@ $("#searchForm").submit(function(event) {
       })
       $(".query").val("");
     });
-});
+  });
+}
+
+$(watchForm);
